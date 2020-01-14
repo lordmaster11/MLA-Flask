@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Categorias de Mercado Libre</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <a class="navbar-brand" href="https://www.mercadolibre.com.ar" target="_blank">
+      <img src="https://http2.mlstatic.com/ui/navigation/4.1.4/mercadolibre/logo__small.png" alt="logo">
+    </a>
+
+    <ul class="navbar-nav">
+      <li>Mercado Libre Argentina - Donde comprar y vender de todo</li>
+    </ul>
+
+    <div>
+      {% block contenido %}
+      {% endblock contenido %}
+    </div>
+  </nav>
+  <br>
+
+  {% block content %}
+  {% endblock content %}
+
+  <footer class="page-footer font-small cyan darken-3">
+    <div class="container-footer">
+      <div class="text-center">
+        <!-- Facebook -->
+        <a class="fb-ic" href="https://www.facebook.com/MercadoLibre/" target="_blank">
+          <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        </a>
+        <!-- Twitter -->
+        <a class="tw-ic" href="https://twitter.com/mercadolibre?lang=es" target="_blank">
+          <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        </a>
+        <!--Instagram-->
+        <a class="ins-ic" href="https://www.instagram.com/mercadolibre.arg/?hl=es-la" target="_blank">
+          <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        </a>
+        <!--Linkedin -->
+        <a class="li-ic" href="https://ar.linkedin.com/company/mercadolibre" target="_blank">
+          <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        </a>
+        <!--Pinterest-->
+        <a class="pin-ic" href="https://ar.pinterest.com/mercado_libre/" target="_blank">
+          <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+        </a>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">Copyright © 1999-2020:
+      <a href="https://www.mercadolibre.com.ar" target="_blank"> MercadoLibre S.R.L.</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</body>
+
+</html>

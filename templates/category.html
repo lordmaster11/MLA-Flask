@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block contenido %}
+<ul class="nav navbar-nav navbar-right">
+	<li><a class="nav-link" href="/">Volver</a></li>
+</ul>
+{% endblock contenido %}
+
+{% block content %}
+<div class="container">
+	<H2 class="text-center">Lista de productos</H2>
+	<br>
+
+	<h4>{{name_category}}</h4>
+	<br>
+
+	<div class="table-responsive">
+		<table class="table table-hover table-bordered table table-striped table-dark">
+			{% for producto in category %}
+			<tr>
+				<td align="center">
+					<a href={{producto['permalink']}} target="_blank" class="list-group-item list-group-item-action">
+						<img src={{producto['thumbnail']}}>
+					</a>
+				</td>
+				<td>{{producto['title']}}</td>
+				<td style="text-align: right"><B>$ {{producto['price']}}</B></td>
+			</tr>
+			{% endfor %}
+		</table>
+	</div>
+</div>
+{% endblock content %}

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+	<H2 class="text-center">Categorias de Mercado Libre Argentino</H2>
+	<br>
+
+	<div class="list-group">
+		{% for category in categories %}
+		<a href="/category/{{category['id']}}" class="list-group-item list-group-item-action">{{category['name']}}</a>
+		{% endfor %}
+	</div>
+</div>
+
+<div class="page-footer font-small mdb-color darken-3 pt-4">
+	<div class="container">
+		<div class="row d-flex justify-content-center">
+			<div class="col-md-6">
+				<!-- Video -->
+				<div class="embed-responsive embed-responsive-16by9 mb-4">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yl60pPKRKIY"
+						allowfullscreen></iframe>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}

@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.navbar-default {
+    background-color: #FFF059;
+    color: black;
+}
+
+.nav-link {
+    color: black;
+}
+
+.thumbnails {
+    list-style: none;
+}
+
+h4 {
+    color: #FFF059;
+}
+
+.container-footer {
+    padding-top: 5px;
+}
+
+h1 { color: #ff4411; 
+    font-size: 48px; 
+    font-family: 'Signika', sans-serif; 
+    padding-bottom: 10px; 
+}
+
